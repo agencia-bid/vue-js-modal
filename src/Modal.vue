@@ -27,7 +27,19 @@
             :class="modalClass"
             :style="modalStyle"
           >
-            <slot/>
+            <div class="v--modal-container">
+              <div class="v--modal-header">
+                <slot name="header"/>
+              </div>
+
+              <div class="v--modal-body">
+                <slot name="default"/>
+              </div>
+
+              <div class="v--modal-footer">
+                <slot name="footer"/>
+              </div>
+            </div>
             <resizer
               v-if="resizable && !isAutoHeight"
               :min-width="minWidth"
@@ -682,6 +694,14 @@ export default {
 </script>
 
 <style>
+  .v--modal-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .v--modal-header {
+    padding-top: 1rem;
+   }
+
 .v--modal-block-scroll {
   overflow: hidden;
   width: 100vw;

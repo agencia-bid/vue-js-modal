@@ -695,11 +695,12 @@ export default {
 
 <style>
   .v--modal-container {
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 16px;
+    padding-left: 16px;
   }
   .v--modal-header {
-    padding-top: 1rem;
+    padding-top: 16px;
+    font-size: 18px;
    }
 
 .v--modal-block-scroll {

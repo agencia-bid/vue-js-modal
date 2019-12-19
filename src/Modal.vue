@@ -739,13 +739,13 @@
     .v--modal-header button.close {
       background-color: rgba(0, 0, 0, 0);
       border: 0;
-      font-size: 36px;
+      font-size: 30px;
       font-weight: 700;
       line-height: 1;
       color: rgb(0, 0, 0);
       text-shadow: 0 1px 0 #fff;
       opacity: .5;
-      padding: 10px;
+      padding: 16px;
       margin: -16px -16px -16px auto;
     }
 
